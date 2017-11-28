@@ -1,0 +1,119 @@
+@font-face {
+  font-family: Lihei;
+  sans-serif;
+  src: url('font/lihei-pro.ttf');
+}
+
+body, html {
+  background-color: white;
+  font-family: Lihei, sans-serif;
+  padding: 0px;
+  margin-left: 5px;
+}
+
+
+.nav {
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: bold;
+  position: fixed;
+  display:inline-block;
+  vertical-align:top;
+  float:left;
+  margin-top: 43px;
+  z-index: 100;
+
+
+}
+
+.nav li {
+  line-height: 150%;
+}
+
+.nav li a {
+  display: block;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+a:-webkit-any-link {
+  color: red;
+  cursor: auto;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 60px;
+
+}
+
+video {
+  width: 100%;
+  height: auto;
+
+}
+
+.parentContainer {
+  position: absolute;
+  margin-right: 15%;
+  margin-left: 230px;
+  display:inline-block;
+  vertical-align:top;
+  float:left;
+}
+
+p {
+  line-height: 140%;
+}
+
+
+#switch {
+  width: 100%;
+  height: auto;
+}
+
+
+#imageContainer{
+  width: 120%;
+  height: auto;
+  margin-top: 5%;
+  margin-left: -7%;
+  z-index: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+  .nav{
+    font-size: 12px;
+    margin: 3px;
+    padding: 0px;
+
+  }
+
+  .nav li {
+    display: block;
+  }
+
+  .nav li a {
+    text-align: left;
+  }
+
+  .parentContainer{
+    padding: 0px;
+    margin: 0px 20px 0px 100px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+
+}
