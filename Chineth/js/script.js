@@ -4,6 +4,13 @@ $(document).ready(function() {
   var arr = ['img/gif1.gif','img/gif2.gif', 'img/gif3.gif' , 'img/gif4.gif'];
   var counter = 0;
 
+  var scroll = $('html, body');
+
+setInterval(function(){
+    var pos = scroll.scrollTop();
+    scroll.scrollTop(pos + 2);
+}, 200)
+
 
   //hover container to fade nav
   $(function() {
@@ -12,7 +19,6 @@ $(document).ready(function() {
     }, function() {
       $('.nav').fadeTo(600, 1);
     });
-    console.log('parentContainer')
   });
 
   $(function() {
